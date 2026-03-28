@@ -6,4 +6,9 @@ import (
 
 func main() {
 	fmt.Print("Hello world")
+
+}
+
+func delay() {
+
 }
