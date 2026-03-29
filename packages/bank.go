@@ -3,11 +3,14 @@ package main
 import (
 	"bank/fileops"
 	"fmt"
+
+	"github.com/Pallinder/go-randomdata"
 )
 
 const accountBalanceFile = "balance.txt"
 
 func main() {
+	fmt.Println(randomdata.PhoneNumber())
 	var accountBalance, err = fileops.GetBalanceFromFile(accountBalanceFile)
 
 	if err != nil {
